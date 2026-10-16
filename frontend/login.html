@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NexSupport - Login</title>
+
+    <link
+        rel="stylesheet"
+        href="css/login.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         ÁREA PRINCIPAL
+    ========================== -->
+
+    <main class="login-container">
+
+
+        <!-- =========================
+             LADO ESQUERDO
+        ========================== -->
+
+        <section class="login-info">
+
+            <div class="brand">
+
+                <span class="brand-icon">◈</span>
+
+                <h1>NexSupport</h1>
+
+            </div>
+
+
+            <div class="info-content">
+
+                <span class="info-badge">
+                    ● SUPORTE INTELIGENTE
+                </span>
+
+
+                <h2>
+                    Seu suporte de TI,
+                    <span>mais simples.</span>
+                </h2>
+
+
+                <p>
+                    Encontre soluções para problemas técnicos,
+                    acompanhe seus chamados e entre em contato
+                    com nossa equipe de suporte.
+                </p>
+
+
+                <div class="features">
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🤖
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Assistente inteligente
+                            </strong>
+
+                            <span>
+                                Encontre soluções rapidamente.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🎫
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Acompanhe seus chamados
+                            </strong>
+
+                            <span>
+                                Consulte o status das suas solicitações.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🛡️
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Atendimento seguro
+                            </strong>
+
+                            <span>
+                                Acesso exclusivo para funcionários.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <small class="copyright">
+                © 2026 NexSupport
+            </small>
+
+        </section>
+
+
+
+        <!-- =========================
+             LADO DIREITO
+        ========================== -->
+
+        <section class="login-panel">
+
+
+            <div class="login-card">
+
+
+                <div class="login-header">
+
+                    <div class="mobile-logo">
+                        ◈
+                    </div>
+
+                    <h2>
+                        Bem-vindo!
+                    </h2>
+
+                    <p>
+                        Entre com seus dados corporativos
+                        para acessar o suporte.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     FORMULÁRIO
+                ========================== -->
+
+                <form id="loginForm">
+
+
+                    <!-- ID -->
+
+                    <div class="form-group">
+
+                        <label for="employeeId">
+                            ID do funcionário
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span>
+                                #
+                            </span>
+
+                            <input
+                                type="text"
+                                id="employeeId"
+                                name="employeeId"
+                                placeholder="Ex: 000123"
+                                autocomplete="username"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="employeeEmail">
+                            E-mail corporativo
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span>
+                                @
+                            </span>
+
+                            <input
+                                type="email"
+                                id="employeeEmail"
+                                name="employeeEmail"
+                                placeholder="funcionario@empresa.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MENSAGEM DE ERRO -->
+
+                    <div
+                        id="loginError"
+                        class="login-error"
+                    >
+                    </div>
+
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        class="login-button"
+                    >
+
+                        Entrar no sistema
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- AJUDA -->
+
+                <div class="login-help">
+
+                    <span>
+                        🔒
+                    </span>
+
+                    <p>
+                        Acesso exclusivo para funcionários
+                        autorizados pela empresa.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/usuarios.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

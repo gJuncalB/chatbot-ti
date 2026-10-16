@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NexSupport - Meus Chamados</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <span>◈</span>
+
+            <h1>NexSupport</h1>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a
+                href="chamados.html"
+                class="active"
+            >
+                Meus chamados
+            </a>
+
+            <a href="ajuda.html">
+                Ajuda
+            </a>
+
+        </nav>
+
+
+        <div class="user">
+
+            <span class="user-icon">
+                👤
+            </span>
+
+            <div>
+
+                <strong id="userName">
+                    Funcionário
+                </strong>
+
+                <small id="userId">
+                    ID: 000123
+                </small>
+
+                <small id="userDepartment">
+                    Setor
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="main">
+
+
+        <section class="tickets-page">
+
+
+            <!-- TÍTULO -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <span class="page-label">
+                        CENTRAL DE ATENDIMENTO
+                    </span>
+
+                    <h2>
+                        Meus chamados
+                    </h2>
+
+                    <p>
+                        Acompanhe suas solicitações de suporte
+                        e consulte o andamento de cada atendimento.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="index.html"
+                    class="new-ticket-button"
+                >
+                    + Novo chamado
+                </a>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FILTROS
+            ========================== -->
+
+            <div class="ticket-filters">
+
+                <button
+                    class="filter-button active"
+                    data-filter="todos"
+                >
+                    Todos
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="aberto"
+                >
+                    Abertos
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="andamento"
+                >
+                    Em atendimento
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="resolvido"
+                >
+                    Resolvidos
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LISTA DE CHAMADOS
+            ========================== -->
+
+            <div
+                id="ticketsList"
+                class="tickets-list"
+            >
+
+                <!-- Os chamados serão inseridos
+                     pelo chamados.js -->
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="footer">
+
+        <span>
+            NexSupport • Central de Suporte de TI
+        </span>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+
+
+    <script src="js/usuarios.js"></script>
+    <script src="js/chamados.js"></script>
+
+</body>
+
+</html>

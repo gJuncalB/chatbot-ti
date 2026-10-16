@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NexSupport - Ajuda</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <span>◈</span>
+
+            <h1>NexSupport</h1>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="chamados.html">
+                Meus chamados
+            </a>
+
+            <a
+                href="ajuda.html"
+                class="active"
+            >
+                Ajuda
+            </a>
+
+        </nav>
+
+
+        <div class="user">
+
+            <span class="user-icon">
+                👤
+            </span>
+
+            <div>
+
+                <strong id="userName">
+                    Funcionário
+                </strong>
+
+                <small id="userId">
+                    ID: 000123
+                </small>
+
+                <small id="userDepartment">
+                    Setor
+                </small>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="main">
+
+        <section class="help-page">
+
+
+            <!-- TÍTULO -->
+
+            <div class="help-header">
+
+                <span class="page-label">
+                    CENTRAL DE AJUDA
+                </span>
+
+                <h2>
+                    Como podemos ajudar?
+                </h2>
+
+                <p>
+                    Encontre respostas para dúvidas frequentes
+                    e problemas comuns de TI.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PESQUISA
+            ========================== -->
+
+            <div class="help-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="helpSearch"
+                    placeholder="Pesquise por um problema ou dúvida..."
+                >
+
+            </div>
+
+
+
+            <!-- =========================
+                 CATEGORIAS
+            ========================== -->
+
+            <section class="help-section">
+
+                <div class="section-title">
+
+                    <h3>
+                        Categorias
+                    </h3>
+
+                    <p>
+                        Encontre ajuda de acordo com o tipo de problema.
+                    </p>
+
+                </div>
+
+
+                <div class="help-categories">
+
+
+                    <button
+                        class="help-category"
+                        data-category="computador"
+                    >
+
+                        <span class="category-icon">
+                            🖥️
+                        </span>
+
+                        <strong>
+                            Computador
+                        </strong>
+
+                        <small>
+                            Desempenho, travamentos e inicialização
+                        </small>
+
+                    </button>
+
+
+
+                    <button
+                        class="help-category"
+                        data-category="internet"
+                    >
+
+                        <span class="category-icon">
+                            🌐
+                        </span>
+
+                        <strong>
+                            Rede e Internet
+                        </strong>
+
+                        <small>
+                            Wi-Fi, conexão e velocidade
+                        </small>
+
+                    </button>
+
+
+
+                    <button
+                        class="help-category"
+                        data-category="impressora"
+                    >
+
+                        <span class="category-icon">
+                            🖨️
+                        </span>
+
+                        <strong>
+                            Impressoras
+                        </strong>
+
+                        <small>
+                            Impressão, conexão e configuração
+                        </small>
+
+                    </button>
+
+
+
+                    <button
+                        class="help-category"
+                        data-category="audio"
+                    >
+
+                        <span class="category-icon">
+                            🔊
+                        </span>
+
+                        <strong>
+                            Áudio
+                        </strong>
+
+                        <small>
+                            Som, microfone e dispositivos
+                        </small>
+
+                    </button>
+
+
+
+                    <button
+                        class="help-category"
+                        data-category="acesso"
+                    >
+
+                        <span class="category-icon">
+                            🔐
+                        </span>
+
+                        <strong>
+                            Acesso e Contas
+                        </strong>
+
+                        <small>
+                            Senhas, contas e permissões
+                        </small>
+
+                    </button>
+
+
+
+                    <button
+                        class="help-category"
+                        data-category="email"
+                    >
+
+                        <span class="category-icon">
+                            📧
+                        </span>
+
+                        <strong>
+                            E-mail
+                        </strong>
+
+                        <small>
+                            Envio, recebimento e acesso
+                        </small>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 PERGUNTAS FREQUENTES
+            ========================== -->
+
+            <section class="help-section">
+
+                <div class="section-title">
+
+                    <h3>
+                        Perguntas frequentes
+                    </h3>
+
+                    <p>
+                        Algumas das dúvidas mais comuns dos funcionários.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="faqList"
+                    class="faq-list"
+                >
+
+
+                    <!-- FAQ 1 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="computador"
+                        data-search="computador lento travando desempenho"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                Meu computador está muito lento. O que fazer?
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Feche programas que não estão sendo utilizados
+                                e verifique se existem muitos aplicativos
+                                iniciando junto com o Windows.
+                            </p>
+
+                            <p>
+                                Caso o problema continue, procure o
+                                <strong>NexSupport</strong> para realizar
+                                uma análise mais detalhada.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- FAQ 2 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="internet"
+                        data-search="internet wifi conexão rede lento"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                Minha internet não está funcionando.
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Verifique se o cabo de rede está conectado
+                                corretamente ou se o computador está conectado
+                                à rede Wi-Fi da empresa.
+                            </p>
+
+                            <p>
+                                Se outros computadores também estiverem
+                                sem conexão, abra um chamado para o suporte.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- FAQ 3 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="impressora"
+                        data-search="impressora imprimir impressão offline"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                A impressora aparece como offline.
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Verifique se a impressora está ligada e
+                                conectada corretamente à rede.
+                            </p>
+
+                            <p>
+                                Caso continue aparecendo como offline,
+                                solicite atendimento ao suporte de TI.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- FAQ 4 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="audio"
+                        data-search="audio som microfone fone não funciona"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                Meu computador está sem áudio.
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Verifique o volume do computador e confirme
+                                se o dispositivo de saída correto está
+                                selecionado nas configurações de som.
+                            </p>
+
+                            <p>
+                                Se estiver utilizando um headset,
+                                confira também sua conexão.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- FAQ 5 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="acesso"
+                        data-search="senha login acesso conta bloqueada"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                Não consigo acessar minha conta corporativa.
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Verifique se o ID e os dados de acesso
+                                foram digitados corretamente.
+                            </p>
+
+                            <p>
+                                Se sua conta estiver bloqueada ou você
+                                tiver esquecido sua senha, abra um chamado
+                                para o suporte de TI.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- FAQ 6 -->
+
+                    <article
+                        class="faq-item"
+                        data-category="email"
+                        data-search="email e-mail mensagem enviar receber outlook"
+                    >
+
+                        <button class="faq-question">
+
+                            <span>
+                                Não consigo enviar ou receber e-mails.
+                            </span>
+
+                            <span class="faq-arrow">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Verifique sua conexão com a internet e
+                                confirme se o aplicativo de e-mail está
+                                conectado à conta corporativa.
+                            </p>
+
+                            <p>
+                                Se o problema persistir, entre em contato
+                                com o suporte.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 NÃO ENCONTROU
+            ========================== -->
+
+            <section class="help-contact">
+
+                <div>
+
+                    <span class="help-contact-icon">
+                        🎫
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Não encontrou o que precisava?
+                        </h3>
+
+                        <p>
+                            Nossa equipe de suporte pode ajudar
+                            você com problemas mais específicos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="index.html"
+                    class="new-ticket-button"
+                >
+                    Solicitar suporte
+                </a>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="footer">
+
+        <span>
+            NexSupport • Central de Suporte de TI
+        </span>
+
+        <span>
+            © 2026
+        </span>
+
+    </footer>
+
+
+    <script src="js/ajuda.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NexSupport - Suporte de TI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo">
+            <span>◈</span>
+            <h1>NexSupport</h1>
+        </div>
+
+        <nav class="menu">
+
+    <a href="index.html">
+        Início
+    </a>
+
+    <a href="chamados.html">
+        Meus chamados
+    </a>
+
+    <a href="ajuda.html">
+        Ajuda
+    </a>
+
+</nav>
+
+       <div class="user">
+    <span class="user-icon">👤</span>
+
+    <div>
+        <strong id="userName">Funcionário</strong>
+
+        <small id="userId">
+            ID: 000123
+        </small>
+
+        <small id="userDepartment">
+            Setor
+        </small>
+    </div>
+</div>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- APRESENTAÇÃO -->
+        <section class="welcome">
+
+            <div class="welcome-text">
+
+                <span class="badge">● SUPORTE INTELIGENTE</span>
+
+                <h2>
+                    Como podemos
+                    <span>ajudar você?</span>
+                </h2>
+
+                <p>
+                    Descreva o problema que você está enfrentando
+                    e nosso assistente encontrará possíveis soluções.
+                </p>
+
+            </div>
+
+
+            <!-- CAMPO DE BUSCA -->
+            <div class="search-box">
+
+                <div class="search-icon">
+                    🔍
+                </div>
+
+                <input
+                    type="text"
+                    id="problemInput"
+                    placeholder="Ex: Meu computador está desligando sozinho..."
+                >
+
+                <button id="solveButton">
+                    Encontrar solução
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROBLEMAS COMUNS -->
+        <section class="common-problems">
+
+            <div class="section-title">
+
+                <div>
+                    <h3>Problemas comuns</h3>
+
+                    <p>
+                        Selecione uma opção ou descreva seu problema acima.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="problem-grid">
+
+                <button class="problem-card" data-problem="computador lento">
+                    <div class="problem-icon">🐌</div>
+
+                    <div>
+                        <strong>Computador lento</strong>
+                        <span>Desempenho e travamentos</span>
+                    </div>
+                </button>
+
+
+                <button class="problem-card" data-problem="internet não funciona">
+                    <div class="problem-icon">🌐</div>
+
+                    <div>
+                        <strong>Internet</strong>
+                        <span>Problemas de conexão</span>
+                    </div>
+                </button>
+
+
+                <button class="problem-card" data-problem="computador sem áudio">
+                    <div class="problem-icon">🔊</div>
+
+                    <div>
+                        <strong>Sem áudio</strong>
+                        <span>Problemas de som</span>
+                    </div>
+                </button>
+
+
+                <button class="problem-card" data-problem="impressora não funciona">
+                    <div class="problem-icon">🖨️</div>
+
+                    <div>
+                        <strong>Impressora</strong>
+                        <span>Falhas de impressão</span>
+                    </div>
+                </button>
+
+
+                <button class="problem-card" data-problem="computador desligando sozinho">
+                    <div class="problem-icon">🔌</div>
+
+                    <div>
+                        <strong>Computador desligando</strong>
+                        <span>Desligamentos inesperados</span>
+                    </div>
+                </button>
+
+
+                <button class="problem-card" data-problem="teclado ou mouse não funciona">
+                    <div class="problem-icon">⌨️</div>
+
+                    <div>
+                        <strong>Teclado / Mouse</strong>
+                        <span>Periféricos não respondem</span>
+                    </div>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA ONDE A RESPOSTA DA IA VAI APARECER -->
+        <section id="solutionArea" class="solution-area">
+
+            <!-- O JavaScript vai preencher esta área futuramente -->
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <p>
+            © 2026 NexSupport — Sistema de Suporte de TI
+        </p>
+
+        <span>
+            Sistema acadêmico
+        </span>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
